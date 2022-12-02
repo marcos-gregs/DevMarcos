@@ -1,0 +1,128 @@
+.mainContent{
+    margin-top: 3%;
+   display: flex;
+   width: 100vw;
+   max-width: 100%;
+   flex-direction:column;
+   justify-content:center;
+   align-items: center;
+  
+   
+   .profileContent{
+    display: flex;
+    flex-direction: row;
+    .profileText{
+        margin-top: 5%;
+        display: flex;
+        flex-direction:column;
+        .profileTitle{
+            display: flex;
+            flex-direction: row;
+            font-size: 6rem;
+            font-family: 'Josefin Sans', sans-serif;
+         
+            .profileDev{
+                background-color: white;
+                font-family: 'Alata', sans-serif;
+                font-size: 1rem;
+                color: $bgColor;
+                min-width: 15vw;
+                max-width: 18vw;
+                max-height: 5vh;
+                text-align: center;
+                clip-path: polygon(7% 0, 100% 0, 94% 100%, 0 98%);
+                margin-top: 13%;
+            }
+            
+           
+        }
+        .profileMain{
+            font-family: 'Alata', sans-serif;
+            margin-left: 9%;
+            max-width: 46vw;
+            font-size: 1.5rem;
+        }
+        .profileContact{
+            display: flex; 
+            margin-top: 5%;         
+            margin-left: 9%;
+            justify-content: space-around;    
+            a{
+              &:hover{
+                .link{
+                    color: rgb(67, 210, 220);
+                }
+                .git{
+                    color: rgba(66, 11, 75, 0.776);
+                }
+            
+              }
+                i{
+                    padding-top: 5%;
+                    width: 5vw;
+                    height: 8vh;
+                    font-size: 3rem;
+                    transition: all,.5s;
+                    text-align: center;
+                    &:hover{
+                        background: rgba(79, 159, 132, 0.509);
+                        border-radius: .5rem .5rem .2rem .2rem;
+                        border-left: solid .2rem white; border-right: solid .2rem white; border-bottom: solid .3rem white;
+                    }
+                }
+            }   
+            
+        }
+    }
+    .profileImg{
+        
+        clip-path: polygon(15% -1%, 100% 0%, 85% 100%, 1% 100%);
+        border: solid .3rem black;
+
+        img{
+            width: 30vw;
+            max-height: 75vh;
+           
+        }
+    
+       }
+
+   }
+   .aboutContent{
+    width: 100%;
+    flex: 0 0 100vh;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    p{
+        
+        font-size: 3rem;
+        grid-area: 'area1';
+        align-items:center ;
+      
+    }
+    div{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .aboutMe{
+            
+            clip-path: polygon(0 0, 79% 0, 100% 17%, 100% 100%, 17% 100%, 0 82%);
+            img{
+          
+
+                width: 30vw;
+                height: 60vh;
+            }
+
+        }
+        .softSkill{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+   }
+}
