@@ -12,6 +12,10 @@
   color: antiquewhite;
 }
 
+a {
+  text-decoration: none;
+}
+
 #bodyColor {
   background-color: #272727;
 }
@@ -133,31 +137,103 @@
 .mainContent .aboutContent {
   width: 100%;
   flex: 0 0 100vh;
-  margin-top: 2%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 .mainContent .aboutContent p {
+  margin-top: 10vh;
   font-size: 3rem;
   grid-area: "area1";
   align-items: center;
 }
 .mainContent .aboutContent div {
-  margin-top: 5%;
+  margin-top: 2vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-.mainContent .aboutContent div .aboutMe {
-  clip-path: polygon(0 0, 79% 0, 100% 17%, 100% 100%, 17% 100%, 0 82%);
+  justify-content: space-between;
 }
 .mainContent .aboutContent div .aboutMe img {
+  margin-left: 10vw;
+  clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
   width: 30vw;
   height: 60vh;
 }
+.mainContent .aboutContent div .softSkill {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+}
 .mainContent .aboutContent div .softSkill p {
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  color: rgb(194, 186, 186);
+  font-size: 1.5rem;
+  margin-right: 20%;
+  text-align: justify;
+}
+.mainContent .aboutContent div .softSkill div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.mainContent .aboutContent div .softSkill div a {
+  text-decoration: none;
+}
+.mainContent .aboutContent div .softSkill div a button {
+  font-size: 1.5rem;
+  display: flex;
+  border: none;
+  max-width: 15vw;
+  height: 9vh;
+  max-height: none;
+  text-align: center;
+  align-items: center;
+}
+.mainContent .aboutContent div .softSkill div a button i {
+  margin-left: 10%;
+  margin-right: 5%;
+  font-size: 1.5rem;
+}
+.mainContent .aboutContent div .softSkill div a button span {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
+  margin-right: 10%;
+}
+.mainContent .aboutContent div .softSkill div a .download {
+  width: 14vw;
+  background-color: rgba(127, 255, 212, 0.797);
+  color: black;
+  border-radius: 20rem;
+  transition: all, 0.5s;
+}
+.mainContent .aboutContent div .softSkill div a .download i, .mainContent .aboutContent div .softSkill div a .download span {
+  color: #272727;
+}
+.mainContent .aboutContent div .softSkill div a .download:hover {
+  background-color: rgba(240, 255, 255, 0);
+  border: none;
+}
+.mainContent .aboutContent div .softSkill div a .download:hover i, .mainContent .aboutContent div .softSkill div a .download:hover span {
+  color: rgb(242, 237, 237);
+}
+.mainContent .aboutContent div .softSkill div a .cvWeb {
+  margin-left: 1vw;
+  width: 10vw;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all, 0.5s;
+  align-items: center;
+  padding-left: 1vw;
+}
+.mainContent .aboutContent div .softSkill div a .cvWeb:hover {
+  background-color: rgba(127, 255, 212, 0.797);
+  color: black;
+  border-radius: 20rem;
+}
+.mainContent .aboutContent div .softSkill div a .cvWeb:hover i, .mainContent .aboutContent div .softSkill div a .cvWeb:hover span {
+  color: #272727;
 }
 
 /*# sourceMappingURL=style.css.map */

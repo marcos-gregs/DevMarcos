@@ -91,36 +91,113 @@
    .aboutContent{
     width: 100%;
     flex: 0 0 100vh;
-    margin-top: 2%;
+    
     display: flex;
     flex-direction: column;
     text-align: center;
     p{
-        
+        margin-top: 10vh;
         font-size: 3rem;
         grid-area: 'area1';
         align-items:center ;
       
     }
     div{
-        margin-top: 5%;
+       margin-top: 2vw;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        .aboutMe{
-            
-            clip-path: polygon(0 0, 79% 0, 100% 17%, 100% 100%, 17% 100%, 0 82%);
-            img{
-          
+        justify-content: space-between;
+       
 
+        .aboutMe{
+
+            img{
+                margin-left: 10vw;
+                clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
                 width: 30vw;
                 height: 60vh;
             }
 
         }
         .softSkill{
+            display: flex;
+            flex-direction: column;
+            max-width: 50vw;
             p{
-                font-size: 1rem;
+            font-family: 'Alata', sans-serif;
+            font-weight: 300;
+            color: rgb(194, 186, 186);
+            font-size: 1.5rem;
+            margin-right: 20%;
+            text-align: justify;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                a{
+                  text-decoration: none;
+                    button{
+                        font-size: 1.5rem; display: flex;
+                        border: none;
+                        max-width: 15vw;
+                        height: 9vh;
+                        max-height: none;
+                        text-align: center;
+                        align-items: center;
+                        
+                        i{
+                            margin-left:10%;
+                            margin-right: 5%;
+                            font-size:1.5rem;
+                        
+                        }
+                        span{
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            font-size:1rem;
+                            margin-right: 10%;
+                        } 
+                    }
+                    .download{
+                             width: 14vw;
+                            background-color: rgba(127, 255, 212, 0.797);
+                            color: black;
+                            border-radius: 20rem;
+                            transition: all,.5s;
+                            i,span{
+                                color: $bgColor;
+                            }
+                            &:hover{
+                                background-color: rgba(240, 255, 255, 0);
+                                border: none;
+
+                                i,span{
+                                    color: rgb(242, 237, 237);
+                                }
+                              
+                            } 
+                    }
+
+                  .cvWeb{
+                    margin-left: 1vw;
+                    width: 10vw;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: all,.5s;
+                    align-items: center;
+                    padding-left: 1vw;
+                    &:hover{
+                        background-color: rgba(127, 255, 212, 0.797);
+                        color: black;
+                        border-radius: 20rem;
+                       
+                        i,span{
+                            color: $bgColor;
+                        }
+                    }
+                  }
+                }
             }
         }
     }
