@@ -142,6 +142,8 @@ a {
   text-align: center;
 }
 .mainContent .aboutContent p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin-top: 10vh;
   font-size: 3rem;
   grid-area: "area1";
@@ -211,6 +213,9 @@ a {
 .mainContent .aboutContent div .softSkill div a .download i, .mainContent .aboutContent div .softSkill div a .download span {
   color: #272727;
 }
+.mainContent .aboutContent div .softSkill div a .download span {
+  font-family: "Josefin Sans", sans-serif;
+}
 .mainContent .aboutContent div .softSkill div a .download:hover {
   background-color: rgba(240, 255, 255, 0);
   border: none;
@@ -234,6 +239,137 @@ a {
 }
 .mainContent .aboutContent div .softSkill div a .cvWeb:hover i, .mainContent .aboutContent div .softSkill div a .cvWeb:hover span {
   color: #272727;
+}
+.mainContent .languageContent {
+  flex: 0 0 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContent .languageContent p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+.mainContent .languageContent .cardLanguage {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(2fr, 4fr);
+  grid-template-rows: minmax(6vh, 15vh);
+  gap: 2%;
+}
+.mainContent .languageContent .cardLanguage .html {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .html h1 {
+  margin-top: 6%;
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.mainContent .languageContent .cardLanguage .html:hover {
+  clip-path: polygon(22% 0, 100% 0%, 75% 100%, 0% 100%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: #f86529;
+}
+.mainContent .languageContent .cardLanguage .css {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+}
+.mainContent .languageContent .cardLanguage .css h1 {
+  margin-top: 6%;
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.mainContent .languageContent .cardLanguage .css:hover {
+  clip-path: polygon(22% 0, 79% 0, 100% 100%, 0% 100%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: #5020df;
+}
+.mainContent .languageContent .cardLanguage .javaScript {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .javaScript h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 6%;
+  font-size: 4rem;
+}
+.mainContent .languageContent .cardLanguage .javaScript:hover {
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 20% 100%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: #cfdf20;
+}
+.mainContent .languageContent .cardLanguage .nodeJs {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .nodeJs h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 6%;
+  font-size: 4rem;
+}
+.mainContent .languageContent .cardLanguage .nodeJs:hover {
+  clip-path: polygon(100% 0%, 86% 50%, 100% 100%, 12% 100%, 0% 50%, 16% 0);
+  border-radius: 8px 8px 8px 8px;
+  background-color: rgba(72, 163, 30, 0.66);
+}
+.mainContent .languageContent .cardLanguage .bootStrap {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .bootStrap h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 6%;
+  font-size: 4rem;
+}
+.mainContent .languageContent .cardLanguage .bootStrap:hover {
+  clip-path: polygon(88% 0, 100% 50%, 90% 100%, 12% 100%, 0 46%, 12% 1%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: rgba(255, 0, 217, 0.594);
+}
+.mainContent .languageContent .cardLanguage .bulma {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .bulma h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 6%;
+  font-size: 4rem;
+}
+.mainContent .languageContent .cardLanguage .bulma:hover {
+  clip-path: polygon(85% 0, 100% 50%, 87% 100%, 0% 100%, 11% 51%, 0% 0%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: rgba(0, 255, 238, 0.642);
+}
+.mainContent .languageContent .cardLanguage .sass {
+  background-color: rgba(255, 166, 0, 0);
+  text-align: center;
+  width: 20vw;
+  height: 15vh;
+}
+.mainContent .languageContent .cardLanguage .sass h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 6%;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.mainContent .languageContent .cardLanguage .sass:hover {
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 20% 100%);
+  border-radius: 8px 8px 8px 8px;
+  background-color: rgba(255, 0, 208, 0.619);
 }
 
 /*# sourceMappingURL=style.css.map */
