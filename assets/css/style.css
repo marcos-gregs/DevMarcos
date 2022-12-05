@@ -142,12 +142,14 @@ a {
   text-align: center;
 }
 .mainContent .aboutContent p {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   margin-top: 10vh;
-  font-size: 3rem;
+  font-weight: 500;
+  font-size: 9rem;
   grid-area: "area1";
   align-items: center;
+}
+.mainContent .aboutContent p span {
+  font-size: 10rem;
 }
 .mainContent .aboutContent div {
   margin-top: 2vw;
@@ -370,6 +372,109 @@ a {
   clip-path: polygon(0 0, 79% 0, 100% 100%, 20% 100%);
   border-radius: 8px 8px 8px 8px;
   background-color: rgba(255, 0, 208, 0.619);
+}
+.mainContent .projectSection {
+  flex: 0 0 90vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContent .projectSection h1 {
+  display: inline;
+  font-size: 9rem;
+}
+.mainContent .projectSection p {
+  font-size: 1.5rem;
+}
+.mainContent .projectSection .filters {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+.mainContent .projectSection .filters .btnFilter {
+  display: flex;
+  justify-content: center;
+  width: 7vw;
+  background-color: antiquewhite;
+  border-radius: 8px;
+}
+.mainContent .projectSection .filters .btnFilter span {
+  color: #272727;
+  font-size: 1.2rem;
+}
+.mainContent .projectSection .filters .btnFilter:hover {
+  background-color: rgba(127, 255, 212, 0.655);
+}
+.mainContent .projectSection .filters .btnFilter:hover span {
+  color: rgb(255, 255, 255);
+}
+.mainContent .projectSection .filterSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(15vh, 20vh);
+  gap: 1%;
+}
+.mainContent .projectSection .filterSection .cardFilter {
+  text-align: center;
+  margin-top: 10%;
+  max-height: 15vh;
+}
+.mainContent .projectSection .filterSection .cardFilter .cardText {
+  margin-top: 10%;
+}
+.mainContent .projectSection .filterSection .cardFilter .cardText a {
+  text-decoration: none;
+}
+.mainContent .projectSection .filterSection .cardFilter .cardText a h1 {
+  font-size: 1.5rem;
+  opacity: 0;
+  color: white;
+}
+.mainContent .projectSection .filterSection .cardFilter .cardText p {
+  margin-top: 2%;
+  margin-right: 50%;
+  opacity: 0;
+}
+.mainContent .projectSection .filterSection .cardFilter:hover {
+  background-color: black;
+}
+.mainContent .projectSection .filterSection .cardFilter:hover .blog, .mainContent .projectSection .filterSection .cardFilter:hover .sunny, .mainContent .projectSection .filterSection .cardFilter:hover .potWev, .mainContent .projectSection .filterSection .cardFilter:hover .cvWeb, .mainContent .projectSection .filterSection .cardFilter:hover .ide, .mainContent .projectSection .filterSection .cardFilter:hover .onebit {
+  display: none;
+}
+.mainContent .projectSection .filterSection .cardFilter:hover a h1 {
+  opacity: 1;
+}
+.mainContent .projectSection .filterSection .cardFilter:hover p {
+  opacity: 1;
+}
+.mainContent .projectSection .filterSection .blog, .mainContent .projectSection .filterSection .sunny, .mainContent .projectSection .filterSection .potWev, .mainContent .projectSection .filterSection .cvWeb, .mainContent .projectSection .filterSection .ide, .mainContent .projectSection .filterSection .onebit {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .projectSection .filterSection .blog {
+  background-image: url("../img/project/blog.png");
+}
+.mainContent .projectSection .filterSection .sunny {
+  background-image: url("../img/project/sunny.png");
+}
+.mainContent .projectSection .filterSection .potWev {
+  background-image: url("../img/project/potWev.png");
+}
+.mainContent .projectSection .filterSection .cvWeb {
+  background-image: url("../img/project/cvWeb.png");
+}
+.mainContent .projectSection .filterSection .ide {
+  background-image: url("../img/project/ide.png");
+}
+.mainContent .projectSection .filterSection .onebit {
+  background-image: url("../img/project/onebit.png");
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -94,31 +94,28 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    p{
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 400;
+    p{      
         margin-top: 10vh;
-        font-size: 3rem;
+        font-weight: 500;
+        font-size: 9rem;
         grid-area: 'area1';
         align-items:center ;
-      
+        span{
+            font-size: 10rem;
+        }
     }
     div{
        margin-top: 2vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-       
-
         .aboutMe{
-
             img{
                 margin-left: 10vw;
                 clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
                 width: 30vw;
                 height: 60vh;
             }
-
         }
         .softSkill{
             display: flex;
@@ -356,25 +353,126 @@
     }
 
    }
-   .projectContent{
+   .projectSection{
+        flex: 0 0 90vh;
+        max-width: 100%;  
         display: flex;
         flex-direction: column;
         align-items: center;
-        .filterText{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            
-          
+        h1{
+            display: inline;
+            font-size: 9rem;
+        }
+        p{
+            font-size: 1.5rem;
         }
         .filters{
+            max-width: 100%;
             display: flex;
             flex-direction: row;
-            .brnFilter{
+            gap: 5%;
+            .btnFilter{ 
                 display: flex;
-                
+                justify-content: center;
+                width: 7vw;
+                background-color: antiquewhite;
+                border-radius: 8px;
+              span{
+                color: $bgColor;
+                font-size: 1.2rem; 
+              }
+              &:hover{
+                background-color: rgba(127, 255, 212, 0.655);
+                span{
+                    color: rgb(255, 255, 255);
+                }
+              }
             }
         }
+        .filterSection{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: minmax(15vh,20vh);
+            gap: 1%;
+            
+            .cardFilter{
+                text-align: center;
+                margin-top: 10%;
+                max-height: 15vh;
+                .cardText{
+                    margin-top: 10%;
+                   
+                    a{                       
+                        text-decoration: none; 
+                        h1{  
+                        font-size: 1.5rem;
+                        opacity: 0;
+                        color: white;
+                        }
+                    }
+                    p{
+                        margin-top: 2%;
+                        margin-right: 50%;
+                        opacity: 0;
+                    }
+
+                }
+
+                &:hover{
+                    background-color: black;
+                    .blog,.sunny,.potWev,.cvWeb,.ide,.onebit{
+                      display: none;
+                        
+                    }
+                    a{
+                            h1{
+                             opacity: 1;
+                             
+                            }
+                         }
+                         p{
+                             opacity: 1;
+                         }
+                    
+                }
+              
+            }
+            .blog,.sunny,.potWev,.cvWeb,.ide,.onebit{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                
+               
+              
+            } 
+            .blog{
+                background-image: url('../img/project/blog.png');
+             
+            }
+            .sunny{
+                background-image: url('../img/project/sunny.png');
+            }
+            .potWev{
+                background-image: url('../img/project/potWev.png');
+            }
+            .cvWeb{
+                background-image: url('../img/project/cvWeb.png');
+            }
+            .ide{
+                background-image: url('../img/project/ide.png')
+            }
+            .onebit{
+                background-image: url('../img/project/onebit.png')
+            }
+
+        }
+        // Img Card
+        
+        
    }
 }
 
