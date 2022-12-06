@@ -43,12 +43,15 @@ const projectSection = document.querySelector('.filterSection')
 project.forEach(element =>{
         const card = document.createElement('div')
         card.className='cardFilter'
-        card.innerHTML=`<div class="${element.image}">
+        card.innerHTML=`
+        <div class="${element.image}">
         </div>
+        <a href="${element.link}"target="_blank" class="titleImg">
         <div class="cardText">
-          <a href="${element.link}" target="_blank" class="titleImg"><h1>${element.name}</h1></a>
+           <h1>${element.name}</h1>
           <p class="${element.tag}">#${element.tag}</p>
-        </div>`
+        </div>
+        </a>`
         projectSection.append(card)
         
 })

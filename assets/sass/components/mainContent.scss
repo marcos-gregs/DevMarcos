@@ -400,17 +400,18 @@
                 text-align: center;
                 margin-top: 10%;
                 max-height: 15vh;
+                a{                       
+                    text-decoration: none; 
                 .cardText{
                     margin-top: 10%;
                    
-                    a{                       
-                        text-decoration: none; 
+            
                         h1{  
                         font-size: 1.5rem;
                         opacity: 0;
                         color: white;
                         }
-                    }
+                    
                     p{
                         margin-top: 2%;
                         margin-right: 50%;
@@ -418,6 +419,7 @@
                     }
 
                 }
+            }
 
                 &:hover{
                     background-color: black;
@@ -425,16 +427,18 @@
                       display: none;
                         
                     }
-                    a{
-                            h1{
-                             opacity: 1;
-                             
-                            }
-                         }
-                         p{
-                             opacity: 1;
-                         }
-                    
+                    a{ 
+                     .cardText{
+                        h1{
+                            opacity: 1;
+                            
+                        }
+                        p{
+                            opacity: 1;
+                        }
+                    }
+                           
+                     }
                 }
               
             }

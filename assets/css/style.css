@@ -422,18 +422,18 @@ a {
   margin-top: 10%;
   max-height: 15vh;
 }
-.mainContent .projectSection .filterSection .cardFilter .cardText {
-  margin-top: 10%;
-}
-.mainContent .projectSection .filterSection .cardFilter .cardText a {
+.mainContent .projectSection .filterSection .cardFilter a {
   text-decoration: none;
 }
-.mainContent .projectSection .filterSection .cardFilter .cardText a h1 {
+.mainContent .projectSection .filterSection .cardFilter a .cardText {
+  margin-top: 10%;
+}
+.mainContent .projectSection .filterSection .cardFilter a .cardText h1 {
   font-size: 1.5rem;
   opacity: 0;
   color: white;
 }
-.mainContent .projectSection .filterSection .cardFilter .cardText p {
+.mainContent .projectSection .filterSection .cardFilter a .cardText p {
   margin-top: 2%;
   margin-right: 50%;
   opacity: 0;
@@ -444,10 +444,10 @@ a {
 .mainContent .projectSection .filterSection .cardFilter:hover .blog, .mainContent .projectSection .filterSection .cardFilter:hover .sunny, .mainContent .projectSection .filterSection .cardFilter:hover .potWev, .mainContent .projectSection .filterSection .cardFilter:hover .cvWeb, .mainContent .projectSection .filterSection .cardFilter:hover .ide, .mainContent .projectSection .filterSection .cardFilter:hover .onebit {
   display: none;
 }
-.mainContent .projectSection .filterSection .cardFilter:hover a h1 {
+.mainContent .projectSection .filterSection .cardFilter:hover a .cardText h1 {
   opacity: 1;
 }
-.mainContent .projectSection .filterSection .cardFilter:hover p {
+.mainContent .projectSection .filterSection .cardFilter:hover a .cardText p {
   opacity: 1;
 }
 .mainContent .projectSection .filterSection .blog, .mainContent .projectSection .filterSection .sunny, .mainContent .projectSection .filterSection .potWev, .mainContent .projectSection .filterSection .cvWeb, .mainContent .projectSection .filterSection .ide, .mainContent .projectSection .filterSection .onebit {
