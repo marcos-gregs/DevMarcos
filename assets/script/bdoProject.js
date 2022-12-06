@@ -55,3 +55,5 @@ project.forEach(element =>{
         projectSection.append(card)
         
 })
+
+const filters = document.querySelectorAll('.btnFilter')
