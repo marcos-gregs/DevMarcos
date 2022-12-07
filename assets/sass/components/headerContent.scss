@@ -21,8 +21,9 @@ a{
 }
 
 .navContainer{
-    width: 100vw;
+  
     display: flex;
+   
   
    
 }
@@ -32,13 +33,13 @@ a{
   
 }
 .navList{
-   
+    margin-left: 70vw;
     div{
         width: 100%;
         display: flex;
-        padding-left: 70%;
+        
         a{
-           font-size: 1rem;           
+           font-size: $text;           
             &:hover{
                 border-bottom: 1px solid;
             }
@@ -47,7 +48,7 @@ a{
 }
 .navList>div>a{
     font-size: 1.5rem;
-    text-align: center;
+   
     &:hover{
         border-bottom: 1px solid;
     }
