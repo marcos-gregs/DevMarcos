@@ -26,40 +26,52 @@ a {
 }
 
 .mainHeader {
+  flex: 0 0 100vw;
+  margin-top: 1%;
   background-color: #272727;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.navContainer {
+.mainHeader .navSection {
+  display: flex;
+  flex-direction: row;
+}
+.mainHeader .navSection .brandAndNavBtn {
   display: flex;
 }
-
-.logoNav > img {
+.mainHeader .navSection .brandAndNavBtn .brandName img {
   width: 5vw;
-  margin-left: 50%;
 }
-
-.navList {
-  margin-left: 70vw;
+.mainHeader .navSection .brandAndNavBtn .navBtn {
+  opacity: 0;
+  color: aliceblue;
+  font-size: 5rem;
 }
-.navList div {
-  width: 100%;
+.mainHeader .navSection .topNav {
+  margin-top: 2%;
+  min-width: 30vw;
+  margin-left: 55vw;
   display: flex;
+  text-align: center;
+  justify-content: space-around;
+  list-style: none;
 }
-.navList div a {
+.mainHeader .navSection .topNav li {
+  font-size: 2rem;
+}
+.mainHeader .navSection .topNav li a {
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  font-weight: 500;
   font-size: 1.5rem;
-}
-.navList div a:hover {
-  border-bottom: 1px solid;
+  text-align: center;
+  display: block;
 }
 
-.navList > div > a {
-  font-size: 1.5rem;
-}
-.navList > div > a:hover {
-  border-bottom: 1px solid;
+.showNav {
+  transform: translate(-55vw);
 }
 
 .mainContent {
@@ -76,7 +88,7 @@ a {
   flex-direction: row;
 }
 .mainContent .profileContent .profileText {
-  margin-top: 5%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
 }
@@ -92,7 +104,6 @@ a {
   flex-direction: row;
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
-  margin-left: 5vw;
   border-bottom: 0.2rem solid white;
 }
 .mainContent .profileContent .profileText .profileTitle .profileDev {
@@ -100,20 +111,19 @@ a {
   font-family: "Alata", sans-serif;
   font-size: 1.5rem;
   color: #272727;
-  min-width: 18vw;
+  min-width: 10vw;
   max-width: 20vw;
   max-height: 5vh;
   text-align: center;
   position: absolute;
   clip-path: polygon(7% 0, 100% 0, 94% 100%, 0 98%);
-  margin-top: 3.55%;
-  margin-left: 30%;
+  margin-top: 1.75%;
+  margin-left: 20%;
 }
 .mainContent .profileContent .profileText .profileMain {
   margin-top: 4%;
   font-family: "Alata", sans-serif;
-  margin-left: 10%;
-  max-width: 46vw;
+  max-width: 60vw;
   font-size: 1.5rem;
 }
 .mainContent .profileContent .profileText .profileContact {
@@ -146,7 +156,6 @@ a {
 .mainContent .profileContent .profileImg {
   clip-path: polygon(15% -1%, 100% 0%, 85% 100%, 1% 100%);
   border: solid 0.3rem black;
-  margin-left: 6vw;
 }
 .mainContent .profileContent .profileImg img {
   width: 30vw;
@@ -410,14 +419,18 @@ a {
 }
 .mainContent .projectSection .filters {
   max-width: 100%;
+  margin-right: 5%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5%;
 }
 .mainContent .projectSection .filters .btnFilter {
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 7vw;
+  min-width: 10vw;
+  margin-bottom: 1vh;
   background-color: antiquewhite;
   border-radius: 8px;
 }
@@ -435,8 +448,8 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(15vh, 20vh);
-  gap: 8vw 1vh;
+  grid-auto-rows: minmax(15vh, 10vh);
+  gap: 22vh 1vw;
 }
 .mainContent .projectSection .filterSection .cardFilter {
   text-align: center;
@@ -497,6 +510,134 @@ a {
 }
 .mainContent .projectSection .filterSection .onebit {
   background-image: url("../img/project/onebit.png");
+}
+
+@media (max-width: 1440px) {
+  .mainContent .profileContent .profileText {
+    margin-top: 10%;
+  }
+  .mainContent .profileContent .profileText .profileTitle div {
+    margin-left: 9vw;
+  }
+  .mainContent .profileContent .profileText .profileTitle .profileDev {
+    min-width: 14vw;
+    margin-top: 6.8vh;
+    margin-left: 30vw;
+  }
+  .mainContent .profileContent .profileText .profileMain {
+    margin-left: 9vw;
+    max-width: 40vw;
+  }
+  .languageContent .cardLanguage div {
+    max-height: 10vh;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 40%;
+  }
+  .mainContent .profileContent .profileText .profileTitle .profileDev {
+    margin-top: 5.6vh;
+    margin-left: 34vw;
+  }
+  .mainContent .languageContent .cardLanguage div {
+    max-height: 8vh;
+  }
+  .mainContent .projectSection .filters {
+    margin-right: 1vw;
+  }
+  .mainContent .projectSection .filterSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18vh 2%;
+  }
+}
+@media (max-width: 768px) {
+  .mainHeader .navSection {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainHeader .navSection .brandAndNavBtn {
+    width: 100%;
+    margin-left: 10%;
+    align-items: center;
+  }
+  .mainHeader .navSection .brandAndNavBtn .navBtn {
+    margin-left: 70%;
+    opacity: 1;
+  }
+  .mainHeader .navSection .topNav {
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    transform: translate(-5555vw);
+    transition: all, ease, 1s;
+  }
+  .mainHeader .navSection .topNav li {
+    max-width: 10%;
+  }
+  .mainContent .profileContent {
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+  .mainContent .profileContent .profileImg {
+    border: none;
+    clip-path: none;
+    width: 40vw;
+    max-height: 60vh;
+    margin-left: 6vw;
+  }
+  .mainContent .profileContent .profileImg img {
+    border-radius: 64% 36% 44% 56%/62% 48% 52% 38%;
+    margin-left: 2rem;
+    width: 40vw;
+    max-height: 60vh;
+  }
+  .mainContent .profileContent .profileText .profileTitle .profileDev {
+    margin-top: 4.5vh;
+    width: 20vw;
+  }
+  .mainContent .profileContent .profileMain {
+    margin-bottom: 0;
+  }
+  .mainContent .aboutContent .aboutTitle {
+    flex-direction: row;
+  }
+  .mainContent .aboutContent div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    align-items: center;
+  }
+  .mainContent .aboutContent div .aboutMe img {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    clip-path: none;
+  }
+  .mainContent .languageContent .cardLanguage div {
+    max-height: 8vh;
+  }
+  .mainContent .projectSection .filters .btnFilter {
+    width: 15vw;
+  }
+  .mainContent .projectSection .filterSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18vh 2%;
+  }
+  .mainContent .projectSection .filterSection .blog, .mainContent .projectSection .filterSection .sunny, .mainContent .projectSection .filterSection .potWev, .mainContent .projectSection .filterSection .cvWeb, .mainContent .projectSection .filterSection .ide, .mainContent .projectSection .filterSection .onebit {
+    background-size: contain;
+  }
+}
+@media (max-width: 600px) {
+  .mainContent .projectSection .filters .btnFilter {
+    width: 15vw;
+  }
+  .mainContent .projectSection .filterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh 0.5vw;
+  }
+  .mainContent .projectSection .filterSection .blog, .mainContent .projectSection .filterSection .sunny, .mainContent .projectSection .filterSection .potWev, .mainContent .projectSection .filterSection .cvWeb, .mainContent .projectSection .filterSection .ide, .mainContent .projectSection .filterSection .onebit {
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

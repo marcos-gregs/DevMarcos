@@ -13,46 +13,58 @@ a{
     background-color: $bgColor;
 }
 .mainHeader{
-    
+    flex: 0 0 100vw;
+    margin-top: 1%;
     background-color: $bgColor;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.navContainer{
-  
-    display: flex;
-   
-  
-   
-}
-.logoNav>img{
-  width: 5vw;
-  margin-left: 50%;
-  
-}
-.navList{
-    margin-left: 70vw;
-    div{
-        width: 100%;
+    .navSection{
         display: flex;
-        
-        a{
-           font-size: $text;           
-            &:hover{
-                border-bottom: 1px solid;
+        flex-direction: row;
+        .brandAndNavBtn{
+            display: flex;
+           .brandName{
+            img{
+                width: 5vw;
+            }
+           }  
+           .navBtn{
+            opacity: 0;
+            color: aliceblue;
+            font-size: 5rem; 
+        }
+
+        }
+        .topNav{
+                margin-top: 2%;
+                min-width:30vw;
+                margin-left: 55vw;
+                display: flex;
+                text-align: center;
+                justify-content: space-around;
+                list-style: none;
+                
+                li{
+                    a{
+                        text-decoration: none;
+                        color: aliceblue;
+                        position: relative;
+                        font-weight: 500 ;
+                        font-size: 1.5rem ;
+                        text-align: center;
+                        display: block;
+                    }
+                    font-size: 2rem;
+                    
+                  
+                }
             }
         }
-    } 
-}
-.navList>div>a{
-    font-size: 1.5rem;
-   
-    &:hover{
-        border-bottom: 1px solid;
-    }
+       
+
 }
 
-
-
+.showNav{
+   transform: translate(-55vw);     
+}

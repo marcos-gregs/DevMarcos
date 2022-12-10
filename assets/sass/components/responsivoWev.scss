@@ -1,0 +1,212 @@
+@media (max-width:1440px) {
+    .mainContent{
+     .profileContent{
+       
+      .profileText{
+        margin-top: 10%;
+        .profileTitle{
+            div{
+                margin-left:9vw;
+            }
+            .profileDev{
+                min-width: 14vw;
+                margin-top: 6.8vh;
+                margin-left: 30vw;
+            }    
+        }
+        .profileMain{
+            margin-left: 9vw;
+            max-width: 40vw;
+        }
+      }
+    }
+    } 
+    .languageContent{
+        .cardLanguage{
+            div{
+                max-height: 10vh;
+            }
+        }
+    }
+}
+@media (max-width:1024px) {
+html{
+    font-size: 40%;
+}   
+.mainContent{
+    .profileContent{
+     .profileText{
+       .profileTitle{
+        
+           .profileDev{
+               margin-top: 5.6vh;
+               margin-left: 34vw;
+           }    
+       }
+  
+     }
+   }
+    .languageContent{
+        .cardLanguage{
+            div{
+                max-height: 8vh;
+            }
+        }
+    }
+    .projectSection{
+        .filters{
+        
+          margin-right: 1vw;
+        }
+        .filterSection{
+            grid-template-columns: repeat(2,1fr);
+            gap: 18vh 2%;
+        }
+    }
+   
+}  
+}
+@media (max-width:768px) {
+    .mainHeader{
+        
+        .navSection{
+            width: 100%;
+            flex-direction: column;
+            .brandAndNavBtn{
+                width: 100%;
+                margin-left: 10%;
+                align-items: center;
+                .navBtn{
+                    margin-left: 70%;
+                    opacity: 1;
+                  
+                }
+            }
+            .topNav{
+                width: 100%;
+                justify-content: space-around;
+                position: relative;
+                transform: translate(-5555vw);
+                transition: all,ease,1s ;
+                li{
+                    max-width: 10%;
+                }
+                
+               
+            }
+
+        }
+       
+    }
+    .mainContent{
+        .profileContent{
+          flex-direction: column-reverse;
+          margin-bottom: 10%;
+          
+          .profileImg{
+            border: none;
+            clip-path: none;
+            width: 40vw;
+            max-height: 60vh;
+            margin-left: 6vw;
+    
+            img{
+               border-radius:64% 36% 44% 56% / 62% 48% 52% 38%  ;
+               margin-left:2rem;
+               width: 40vw;
+               max-height: 60vh;
+            }
+        
+           }
+           .profileText{
+            .profileTitle{
+               
+                .profileDev{
+                    margin-top: 4.50vh;
+                    width: 20vw;
+                }    
+            }
+           }
+           .profileMain{
+            margin-bottom: 0;
+           }
+           
+       }
+       .aboutContent{
+        .aboutTitle{
+            flex-direction: row;
+        }
+       
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 8vw;
+            align-items: center;
+            .aboutMe{
+                
+                img{
+                    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+                    clip-path: none;
+                }
+            }
+                
+        
+        }
+       }
+        .languageContent{
+            .cardLanguage{
+                div{
+                    max-height: 8vh;
+                }
+            }
+        }
+        .projectSection{
+            .filters{
+                .btnFilter{
+                    width: 15vw;
+                }
+                }
+            .filterSection{
+                grid-template-columns: repeat(2,1fr);
+                gap: 18vh 2%;
+                .blog,.sunny,.potWev,.cvWeb,.ide,.onebit{
+                    background-size: contain;
+                   
+                }
+            }
+        }
+       
+    } 
+    
+}
+@media (max-width:600px) {
+    .mainContent{
+        .projectSection{
+            .filters{
+                .btnFilter{
+                    width: 15vw;
+                }
+                }
+            .filterSection{
+                display: flex;
+                flex-direction: column;
+                gap: .5vh .5vw;
+                .cardFilter{
+                    
+                }
+                .blog,.sunny,.potWev,.cvWeb,.ide,.onebit{
+                    background-size: cover;
+                 
+                   
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:425px) {
+    
+}
+@media (max-width:375px) {
+    
+}
